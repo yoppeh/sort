@@ -1,2 +1,2 @@
 # sort
-A comparison of sorting algorithms
+A comparison of sorting algorithms.
