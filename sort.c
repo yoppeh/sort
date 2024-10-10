@@ -2,17 +2,14 @@
  * @file sort.c
  * @author Warren Mann (warren@nonvol.io)
  * @brief Implementations of various sorting algorithms.
- * @version 0.1
- * @date 2024-03-10
+ * @version 0.0.1
+ * @date 2024-10-09
  * 
  * @copyright Copyright (c) 2024
  */
 
 #include <stdlib.h>
 #include <string.h>
-
-
-// BUBBLE SORT
 
 void sort_bubble(int *a, int n) {
     int i, j;
@@ -29,9 +26,6 @@ void sort_bubble(int *a, int n) {
         }
     }
 }
-
-
-// HEAP SORT
 
 static void sift_down(int *a, int s, int e) {
     int r = s;
@@ -75,9 +69,6 @@ void sort_heap(int *a, int n) {
     } 
 }
 
-
-// INSERTION SORT
-
 void sort_insertion(int *a, int n) {
     for (int i = 1; i < n; i++) {
         int x = a[i];
@@ -88,9 +79,6 @@ void sort_insertion(int *a, int n) {
         a[j + 1] = x;
     }
 }
-
-
-// MERGE SORT
 
 static void merge(int *a, int s, int m, int e, int *b) {
     int i = s, j = m;
@@ -129,9 +117,6 @@ void sort_merge(int *a, int n) {
     free(b);
     b = NULL;
 }
-
-
-// QUICK SORT
 
 static int partition(int *a, int l, int h) {
     int p = a[h];

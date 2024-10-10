@@ -2,8 +2,8 @@
  * @file sort.h
  * @author Warren Mann (warren@nonvol.io)
  * @brief Implementations of various sorting algorithms.
- * @version 0.1
- * @date 2024-03-10
+ * @version 0.0.1
+ * @date 2024-10-09
  * 
  * @copyright Copyright (c) 2024
  */
